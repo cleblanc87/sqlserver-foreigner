@@ -38,7 +38,7 @@ module Foreigner
           options[:dependent] = case row['dependency']
             when 'c' then :delete
             when 'n' then :nullify    # Not currently extracted
-            when 'r' then :restrict
+            #when 'r' then :restrict
           end
 
           ForeignKeyDefinition.new(table_name, row['to_table'], options)
