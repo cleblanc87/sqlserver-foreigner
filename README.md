@@ -1,24 +1,19 @@
 # Sqlserver::Foreigner
 
-TODO: Write a gem description
-
+[Foreigner](https://github.com/matthuhiggins/foreigner) introduces a few methods to your migrations for adding and removing foreign key constraints. It also dumps foreign keys to schema.rb.  
+This gem adds SQL Server support on top of Foreigner.
 ## Installation
 
 Add this line to your application's Gemfile:
 
     gem 'sqlserver-foreigner'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sqlserver-foreigner
-
 ## Usage
+See [Foreigner](https://github.com/matthuhiggins/foreigner).
 
-TODO: Write usage instructions here
+## Why have a separate gem?
+The author of Foreigner chooses not to add additional databases to Foreigner itself but made it easy to register new adapters from another gem.
+([more](https://github.com/matthuhiggins/foreigner/pull/94))
 
 ## Contributing
 
