@@ -1,4 +1,6 @@
 require "sqlserver/foreigner/version"
 require 'foreigner'
 
-Foreigner::Adapter.register 'sqlserver', File.expand_path('../foreigner/sqlserver-adapter.rb', __FILE__)
+['sqlserver', 'mssql'].each do |adapter|
+  Foreigner::Adapter.register adapter, File.expand_path('../foreigner/sqlserver-adapter.rb', __FILE__)
+end
